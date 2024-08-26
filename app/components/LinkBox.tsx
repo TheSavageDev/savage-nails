@@ -4,10 +4,12 @@ import { colors } from "../utils/colors";
 export const LinkBox = ({
   href,
   text,
+  explainerText,
   light,
 }: {
   href: string;
   text: string;
+  explainerText: string;
   light?: boolean;
 }) => {
   return (
@@ -21,7 +23,7 @@ export const LinkBox = ({
           ? {
               backgroundColor: colors.secondary,
               borderRadius: "0.5rem",
-              padding: "1.5rem 0",
+              padding: "1.5rem 0.5rem",
               textAlign: "center",
               color: colors.text,
               textDecoration: "none",
@@ -33,9 +35,9 @@ export const LinkBox = ({
           : {
               backgroundColor: colors.primary,
               borderRadius: "0.5rem",
-              padding: "1.5rem 0",
-              width: "10.5rem",
-              height: "10.5rem",
+              padding: "1.5rem 0.5rem",
+              width: "20.5rem",
+              height: "20.5rem",
               display: "flex",
               flexDirection: "column",
               justifyContent: "center",
@@ -58,6 +60,17 @@ export const LinkBox = ({
         }}
       >
         {text}
+      </Typography>
+      <Typography
+        component="h2"
+        fontSize={18}
+        color={colors.text}
+        align="center"
+        sx={{
+          textDecoration: "none",
+        }}
+      >
+        {explainerText}
       </Typography>
     </Box>
   );

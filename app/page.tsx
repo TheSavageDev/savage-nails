@@ -4,29 +4,6 @@ import Image from "next/image";
 import logo from "../public/8.jpeg";
 import { LinkBox } from "./components/LinkBox";
 
-const sections = [
-  {
-    headerText: "Shop Now",
-  },
-  {
-    headerText: "Free Sample",
-  },
-  {
-    headerText: "Join",
-  },
-  {
-    headerText: "Host",
-  },
-];
-
-/*
-Shop Now  https://www.colorstreet.com/jsavage
-VIP Group  https://www.facebook.com/share/g/PPDTLB1UxA59tdEQ/
-Free Sample & Surprise https://forms.gle/En877y38XLFrvJzDA
-Join https://www.colorstreet.com/jsavage/enrollment/join
-Host https://www.colorstreet.com/jsavage/hostnow
-*/
-
 export default function Home() {
   return (
     <main
@@ -78,17 +55,13 @@ export default function Home() {
           <LinkBox
             href="https://www.facebook.com/share/g/PPDTLB1UxA59tdEQ/"
             text="Join VIP"
+            explainerText="Join our VIP group where we share daily-- tips, tutorials and info about Color Street products."
             light
           />
           <Box>
             <Typography component="p" fontSize={20} color={colors.text}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              We offer busy ladies a variety of hand, nail and make-up products
+              that are an easy, great addition to your beauty routine.
             </Typography>
           </Box>
           <Box
@@ -105,18 +78,22 @@ export default function Home() {
             <LinkBox
               href="https://www.colorstreet.com/jsavage"
               text="Shop Now"
+              explainerText="Ready to browse products? Check out our website"
             />
             <LinkBox
               href="https://forms.gle/En877y38XLFrvJzDA"
               text="Free Sample & Surprise"
+              explainerText="Fill this out and I will send you a sample and a surprise 🙂"
             />
             <LinkBox
               href="https://www.colorstreet.com/jsavage/enrollment/join"
-              text="Join"
+              text="Join ColorStreet"
+              explainerText="Join my team!"
             />
             <LinkBox
               href="https://www.colorstreet.com/jsavage/hostnow"
               text="Host"
+              explainerText="Let's Have a Nail Party!"
             />
           </Box>
         </Box>
